@@ -3,9 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Elizabeth Ann Adjabeng</title>
+    <meta name="author" content="Elizabeth Ann Adjabeng">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Elizabeth Ann Adjabeng: Home Page">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>WDD 131 - Elizabeth Ann Adjabeng</h1>
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals</h1>
+        <nav class="navbar">
+                <a href="linkedin.com">LinkedIn</a>
+                <a href="https://byupw.instructure.com/">Canvas</a>
+                <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/2?lang=eng&id=p41#p41">Scripture</a>
+                <a href="finalproject.html">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <figure class="profile">
+                <img src="images/profile.jpg" alt="My Profile Picture" width="150"/>
+            </figure>
+            <p>I am an enthusiastic and driven individual with a passion for learning and personal growth. I enjoy exploring new opportunities, solving problems, and connecting with others. With a positive attitude and a strong work ethic, I strive to make a meaningful impact and contribute to both personal and professional success.</p>
+            <h3>Accra, Ghana</h3>
+            <figure class="flag">
+                <img src="images/ghana.jpg" alt="Ghana Flag" width="150"/>
+            </figure>
+            <p>Ghana, known as the "Gateway to Africa," is a vibrant country rich in culture, history, and natural beauty, offering a warm welcome with its diverse landscapes, historic sites, and the warmth of its people.</p>
+            <figcaption>Official Flag of Ghana</figcaption>
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://developer.mozilla.org">MDN Web Docs (Mozilla Developer Network)</a></li>
+                <li><a href="https://www.w3schools.com">W3Schools</a></li>
+                <li><a href="https://www.freecodecamp.org">freeCodeCamp</a></li>
+                <li><a href="https://css-tricks.com">CSS-Tricks</a></li>
+                <li><a href="https://stackoverflow.com">Stack Overflow</a></li>
+            </ul>  
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 👩‍💻Elizabeth Ann Adjabeng👩‍💻 Ghana.<p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,120 @@
+body {
+    font-family: "Merriweather", serif;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    background-color: #20045d;
+    color: white;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000000;
+    padding: 0;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+}
+
+.navbar a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    padding: 2rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+    background-color: #20045d;
+    color: white;
+    padding: 1rem;
+    margin-top: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1rem;
+    margin-left: 1rem;
+    border-bottom: 1px solid #ddd;
+    border-width: 2px;
+    padding-right: 10px;
+    width: 60%;
+    text-align: center;
+}
+
+.card {
+    background-color: #f9f9f9;
+    padding: 0;
+    border: 1px solid #ddd;
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+.card p {
+    display: block;
+    padding: 1rem;
+    text-align: left;
+    margin-right: 15rem;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+}
+
+.profile img { 
+    float: right;
+    height: auto; 
+}
+
+.flag img { 
+    float: left;
+    height: auto; 
+    margin-top: 1rem;
+    margin-right: 2rem;
+}
+
+figcaption {
+    padding-bottom: 1.5rem;
+    font-size: 0.65rem;
+    margin-left: 3.5rem;
+    margin-top: 2rem;
+    font-style: italic;
+}
+
+.card ul { 
+    margin-left: 2rem;
+    margin-top: 7rem;
+}
+
+.card li {
+    margin: 7px 0;
+}
+
+footer {
+    text-align: center;
+    background-color: #20045d;
+    color: white;
+    padding: 0.1rem;
+    width: 100%;
+}
