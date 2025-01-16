@@ -1,0 +1,13 @@
+@media screen and (min-width: 600px) {
+    #menubutton {
+        display: block;
+    }
+    nav {
+        flex-direction: row;
+    }
+
+   nav.open a {
+        display: block;
+        text-align: center;
+    }
+} 
