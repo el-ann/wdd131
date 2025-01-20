@@ -1,22 +1,21 @@
-document.addEventListener('DOMContentLoaded', (event) => {
-    const yearELement = document.getElementById('currentYear');
-    const modifiedElement = document.getElementById('lastModified');
+// JavaScript for footer date
+document.addEventListener("DOMContentLoaded", function() {
     const currentYear = new Date().getFullYear();
-    const lastModified = document.lastModified;
-
-    if (yearELement) {
-        yearELement.textContent = currentYear;
-    }
-
-    if (modifiedElement) {
-        modifiedElement.textContent = lastModified;
-    }
-
+    document.getElementById('currentyear').textContent = currentYear;
+    document.getElementById('lastModified').textContent = `Last Modified: ${document.lastModified}`;
+    
+    // Hamburger menu functionality
     const menuButton = document.getElementById('menu-button');
-    const navMenu = document.querySelector('nav-menu');
-
-    menuButton.addEventListener('click', () => {
-        navMenu.classList.toggle('open');
-        menuButton.textContent = navMenu.classList.contains('open') ? 'X' : '☰';
+    const navLinks = document.querySelector('nav');
+    
+    menuButton.addEventListener('click', function() {
+        navLinks.classList.toggle('nav-open');
+        
+        // Toggle the button text between ☰ and X
+        if (menuButton.textContent === '☰') {
+            menuButton.textContent = 'X';
+        } else {
+            menuButton.textContent = '☰';
+        }
     });
 });

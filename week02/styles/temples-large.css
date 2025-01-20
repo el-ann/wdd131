@@ -1,13 +1,19 @@
-@media screen and (min-width: 600px) {
-    #menubutton {
-        display: block;
+@media (min-width: 768px) {
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
     }
+
     nav {
         flex-direction: row;
     }
 
-   nav.open a {
-        display: block;
-        text-align: center;
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
     }
-} 
+
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
