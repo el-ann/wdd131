@@ -1,10 +1,12 @@
-@media (min-width: 768px) {
+@media (min-width: 500px) {
     .header-container {
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
     nav {
+        display: flex;
         flex-direction: row;
     }
 
@@ -14,6 +16,7 @@
     }
 
     .container {
+        display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 }
