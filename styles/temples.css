@@ -1,73 +1,113 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
+	font-family: 'Roboto', sans-serif;
 }
 
+/* mobile **************************/
 header {
-    background-color: #130c62;
-    color: #fff;
-    padding: 10px 0;
+	background-color: #130c62;
+	display: grid;
+	grid-gap: 1rem;
+	padding: 10px;
 }
 
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+header,main {
+	margin: 0 auto;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 1.5em;
+h1 {
+	font-size: 2rem;
+	color: white;
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: white;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu.open::before {
+	content: "❌";
 }
 
 nav {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
-nav a, nav button {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
-    background: none;
-    border: none;
+.navbar {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	list-style: none;
+	color: #fff;
 }
 
-nav a:hover, nav button:hover {
-    background-color: #444;
-    text-decoration: double underline;
+.navbar a {
+	display: none;
+	padding: 1rem;
+	text-align: left;
+	text-decoration: none;
+	color: white;
 }
 
-main {
-    padding: 20px;
+.navbar a:hover {
+	color: white;
+	font-weight: 700;
+    background-color: #000;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
+.open a {
+	display: block;
+}
+
+main { 
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+	text-decoration: none;
+	margin: 30px;
+	font-size: 30px;
+}  
+
+.temples {
+	display:grid; 
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+	grid-gap: 25px;
+	place-items: center;
 }
 
 figure {
-    margin: 0;
-    text-align: center;
+	background-color:#fff;
 }
 
-img {
+img { 
     width: 100%;
-    height: 250px;
+    height: 150px;
 }
 
 figcaption {
-    margin-top: 10px;
-    font-weight: bold;
+	font-size: smaller;
+	text-align: center;
+	color: rgb(22, 25, 201);
+    padding-bottom: 10%;
 }
 
 footer {
+	text-align: center;
     background-color: #130c62;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
+    color: white;
+    padding: 10px;
 }
