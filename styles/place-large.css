@@ -1,0 +1,19 @@
+@media (min-width: 500px) {
+    .hero {
+        height: 300px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero {
+        height: 500px;
+    }
+}
+
+footer {
+    font-size: 0.9em;
+}
+
+#currentyear {
+    font-weight: bold;
+}

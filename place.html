@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghana</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Ghana</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero_large.webp" media="(min-width: 1200px)">
+                <source srcset="images/hero_small.webp" media="(min-width: 500px)">
+                <img src="images/hero_small.webp" alt="Ghana" width="400" height="200">
+            </picture>
+
+            <div class="data-box">
+                <h2 class="header-box">Data</h2>
+                <p><strong>Area:</strong> 92,098 sq mi</p>
+                <p><strong>Population:</strong> Approximately 32.1 million</p>
+                <p><strong>Capital:</strong> Accra</p>
+                <p><strong>Languages:</strong> English, Akan, Ewe, Ga</p>
+                <p><strong>Currency:</strong> Ghanaian cedi</p>
+                <p><strong>Time Zone:</strong> GMT</p>
+                <p><strong>Calling Code:</strong> +233</p>
+                <p><strong>Internet TLD:</strong> .gh</p>
+            </div>
+
+            <div class="weather-box">
+                <h2 class="header-box">Weather
+                <figure class="weather-icon">
+                    <img src="images/weather.svg" alt="Weather Icon">
+                </figure></h2>
+                <p><strong>Temperature:</strong> 27°C</p>
+                <p><strong>Conditions:</strong> Clear</p>
+                <p><strong>Wind Speed:</strong> 14 km/h</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Elizabeth Ann Adjabeng | Ghana</p>
+        <p id="lastModified">Last Modification: </p>
+    </footer>
+</body>
+</html>
