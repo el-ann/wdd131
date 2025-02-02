@@ -3,34 +3,26 @@
     --secondary-color: #fcd116; 
     --accent-color: #ce1126; 
     --border-color: #777; 
+    --font-family: "Roboto", serif;
 }
 
-body {
-    font-family: 'Roboto', serif;
-    margin: 0;
-    padding: 0;
+* {
+    box-sizing: border-box;
+}
+
+body { 
+    font-family: var(--font-family);
     background-color: #f4f4f4;
+    font-size: 16px;
 }
 
 header, footer {
     background-color: var(--primary-color);
     color: white;
     text-align: center;
-    padding: 2px 0;
-}
-
-.header-box {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 5px;
-    margin-top: 1px;
-    border-radius: 5px;
-}
-
-main {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
+    padding: 0.5rem;
+    width: 100%;
+    margin: auto;
 }
 
 .hero {
@@ -38,41 +30,78 @@ main {
 }
 
 .hero img {
+    display: block;
     width: 100%;
-    height: auto;
-}
-
-.data-box, .weather-box {
-    background-color: white;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    margin: 15px 0;
 }
 
 .data-box {
     position: absolute;
-    top: 20px;
-    left: 5%;
+    top: 120px;
+    left: 30px;
+    right: 4px;
+    padding: 2px;
+    background-color: rgb(173, 190, 205);
     color: black;
-    background-color: rgba(249, 249, 251, 0.6);
-    padding: 15px;
-    border-radius: 10px;
-    max-width: 80%;
+    border-radius: 5px;
+    margin: 1rem;
+    border: 0.5px solid rgb(171, 171, 247);
+    width: 350px;
 }
 
-.weather-box {
+.data-box h2 {
+    background-color: var(--primary-color);
+    padding: 10px;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+    border: 10px solid #085a38;
+    width: 150px;
+    position: relative;
+    right: 15px;
+}
+
+.data-box p {
+    text-align: center;
+    padding-right: 1rem;
+}
+
+.weather-box{
+    background-color: rgb(173, 190, 205);
     position: absolute;
-    bottom: 20px;
-    right: 5%;
-    color: black;
-    background-color: rgba(249, 249, 251, 0.6);
-    border-radius: 10px;
-    width: 18%;
+    top: 28rem;
+    right: 2.9rem;
+    left: 73rem;
+    width: 20%;
+    padding: 3px;
 }
 
-.weather-icon img {
-    width: 50px;
-    height: 50px;
-    
+.weather-box h2 {
+    background-color: var(--primary-color);
+    padding: 9px;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+    border: 8px solid #085a38;
+    width: 150px;
+    position: relative;
+    right: 15px;
+}
+
+.weather-icon {
+    position: absolute;
+    top: 0.1rem;
+    left: 6rem;
+}
+
+.weather-box p {
+    text-align: center;
+    padding-right: 0.1rem;
+    color: black;
+}
+
+.weather-box h2::after {
+    content: " ";
+    font-size: 30px;
+    position: absolute;
+    right: -35px;
+    top: 5px;
+    color: var(--accent-color);
 }

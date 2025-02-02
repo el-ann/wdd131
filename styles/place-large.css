@@ -1,19 +1,32 @@
-@media (min-width: 500px) {
-    .hero {
-        height: 300px;
+@media screen and (max-width: 768px) {
+    .data-box {
+        position: relative;
+        width: 90%;
+        top: auto;
+        left: auto;
+        right: auto;
+        margin: 1rem auto;
+        padding: 10px;
     }
-}
 
-@media (min-width: 1200px) {
-    .hero {
-        height: 500px;
+    .weather-box {
+        position: relative;
+        width: 90%;
+        left: auto;
+        right: auto;
+        margin: 1rem auto;
+        padding: 10px;
     }
-}
 
-footer {
-    font-size: 0.9em;
-}
+    .weather-icon {
+        content: url("images/weather.svg");
+    }
 
-#currentyear {
-    font-weight: bold;
+    .hero img {
+        height: auto;
+    }
+
+    .weather-box {
+        top: auto;
+    }
 }

@@ -7,26 +7,28 @@
     <meta name="description" content="Information about Ghana">
     <meta name="author" content="Elizabeth Ann Adjabeng"> 
     <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
     <script src="scripts/place.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Ghana</h1>
-    </header>
+    <div class="container">
+        <header>
+            <h1>Ghana</h1>
+        </header>
 
-    <main>
-        <div class="hero">
+        <main class="hero">
             <picture>
                 <source srcset="images/hero_large.webp" media="(min-width: 1200px)">
                 <source srcset="images/hero_small.webp" media="(min-width: 500px)">
-                <img src="images/hero_small.webp" alt="Ghana" width="400" height="200">
+                <img src="images/hero_small.webp" alt="Ghana" width="400" height="600">
             </picture>
+        </main>
 
-            <div class="data-box">
-                <h2 class="header-box">Data</h2>
+        <section class="data-box">
+            <h2>Data</h2>
                 <p><strong>Area:</strong> 92,098 sq mi</p>
                 <p><strong>Population:</strong> Approximately 32.1 million</p>
                 <p><strong>Capital:</strong> Accra</p>
@@ -35,23 +37,22 @@
                 <p><strong>Time Zone:</strong> GMT</p>
                 <p><strong>Calling Code:</strong> +233</p>
                 <p><strong>Internet TLD:</strong> .gh</p>
-            </div>
+        </section>
 
-            <div class="weather-box">
-                <h2 class="header-box">Weather
-                <figure class="weather-icon">
-                    <img src="images/weather.svg" alt="Weather Icon">
-                </figure></h2>
+        <section class="weather-box">
+            <h2>Weather</h2>
+            <img class="weather-icon" src="images/weather.svg" alt="Weather" width="50" height="100">
+
                 <p><strong>Temperature:</strong> 27°C</p>
                 <p><strong>Conditions:</strong> Clear</p>
                 <p><strong>Wind Speed:</strong> 14 km/h</p>
-            </div>
-        </div>
-    </main>
+                <p><strong>Wind Chill:</strong> <span id="windChill"></span></p>
+        </section>
 
-    <footer>
-        <p>&copy; <span id="currentyear"></span> Elizabeth Ann Adjabeng | Ghana</p>
-        <p id="lastModified">Last Modification: </p>
-    </footer>
+        <footer>
+            <p>&copy; <span id="currentyear"></span> Elizabeth Ann Adjabeng | Ghana</p>
+            <p id="lastModified">Last Modification: </p>
+        </footer>
+    </div>
 </body>
 </html>
