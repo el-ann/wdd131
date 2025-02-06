@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: "Roboto", serif;
+}
+  
+header {
+	background-color: #130c62;
+	display: grid;
+	grid-gap: 1rem;
+	padding: 10px;
+    border: 1px solid rgba(120, 24, 24, 0.3);
+    box-shadow: 0 0 30px #130c62;
+}
+  
+header,main {
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 2rem;
+	color: white;
+}
+
+.wrap-cont {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: white;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+    content:☰;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	list-style: none;
+	color: #fff;
+}
+
+.navbar a {
+	display: none;
+	padding: 1rem;
+	text-align: left;
+	text-decoration: none;
+	color: white;
+}
+
+.navbar a:hover {
+	color: white;
+	font-weight: 700;
+    background-color: #000;
+}
+
+.open a {
+	display: block;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: none;
+    margin: 30px;
+    font-size: 30px;
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.figure-cont {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.figureCard {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+figure {
+    margin: 1rem 0;
+    padding: 1rem;
+    text-align: center;
+}
+ 
+.caption {
+    margin: 1rem;
+}
+  
+.figureCard:hover {
+    box-shadow: 8px 8px 20px rgba(8, 3, 3, 0.762);
+}
+  
+.figureCard img {
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+footer {
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
