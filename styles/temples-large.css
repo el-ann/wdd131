@@ -7,13 +7,13 @@
 	.navbar {
 		flex-direction: row;
 	}
+	
 	.navbar a {
 		display: block;
 		flex: 2 1 100%;
 	}
+
 	#menu {
         display: none;
     }
 }
-
-
