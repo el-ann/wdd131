@@ -96,6 +96,13 @@ h2 {
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
 }
 
+.temples-grid {
+    display: grid; /* Enables grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Creates columns with a minimum width of 200px */
+    gap: 20px; /* Adds space between the grid items */
+    padding: 20px; /* Adds padding around the grid */
+}
+
 figure {
 	background-color:#fff;
 }
