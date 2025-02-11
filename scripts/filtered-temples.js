@@ -85,13 +85,6 @@ const temples = [
     area: 38771,
     imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/vernal-utah-temple/vernal-utah-temple-40521-main.jpg"
   },
-  {
-    templeName: "Veracruz Mexico Temple",
-    location: "Boca del Rio, Veracruz",
-    dedicated: "1999-05-29",
-    area: 10700,
-    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/veracruz-mexico-temple/veracruz-mexico-temple-1951-main.jpg"
-  }
 ];
 
 // Function to create and display temple cards
