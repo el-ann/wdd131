@@ -104,7 +104,7 @@ function displayTemples(filteredTemples) {
     card.innerHTML = `
       <figure>
         <div class="caption">
-          <h2>${temple.templeName}</h2>
+          <h3>${temple.templeName}</h3>
           <p><strong>Location:</strong> ${temple.location}</p>
           <p><strong>Dedicated:</strong> ${new Date(temple.dedicated).toLocaleDateString()}</p>
           <p><strong>Area:</strong> ${temple.area.toLocaleString()} sq ft</p>
