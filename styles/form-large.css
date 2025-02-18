@@ -1,0 +1,24 @@
+@media (min-width: 600px) {
+    form {
+        padding: 40px;
+    }
+
+    button {
+        width: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .rating-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rating-item {
+        margin-bottom: 10px;
+    }
+}
