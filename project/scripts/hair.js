@@ -11,6 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     menuButton.addEventListener('click', () => {
         navbar.classList.toggle('active'); // Toggle the 'active' class to show/hide the navbar
-});
+    });
 
 });

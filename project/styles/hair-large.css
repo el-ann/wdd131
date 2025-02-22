@@ -3,6 +3,17 @@
         padding: 0.5em 0;
     }
 
+    .image-gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .image-gallery img {
+        width: 100%; /* Ensures the images scale properly */
+        height: auto;
+    }
+
     main {
         padding: 1em;
     }
@@ -22,6 +33,7 @@
 
     .hamburger {
         display: block; 
+        font-size: 30px; /* Ensure it's visible and the right size */
     }
 
     #navbar {
@@ -41,12 +53,14 @@
     }
 
     nav {
+        display: flex;
         flex-direction: column;
         gap: 10px;
+        width: 100%;
     }
 
     .hero h1 {
-        font-size: 2rem;
+        font-size: 2rem; /* Ensure hero text is legible on smaller screens */
     }
 
     .cta {
@@ -61,5 +75,23 @@
 
     .product {
         margin: 10px 0;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    #navbar {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    #navbar.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
     }
 }
